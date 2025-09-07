@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Your Name</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu"/>
+      <label for="nav-toggle" class="burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Your Name</span>.</h1>
+        <p class="subtitle">M.Tech (VLSI) — Digital & Analog IC Design</p>
+        <p class="lead">
+          I design low-power digital circuits (approximate adders/multipliers), build FPGA prototypes,
+          and craft ultra‑low‑power analog front‑ends (subthreshold OTAs) for biomedical applications.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn-outline" href="ni" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop" alt="workspace placeholder"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p>
+        I'm an electronics engineer focused on power‑performance‑error trade‑offs in modern SoC design.
+        My current work explores adaptive approximate arithmetic for energy‑efficient edge AI and
+        subthreshold analog techniques for wearables.
+      </p>
+      <div class="info-cards">
+        <div class="info">
+          <h3>Location</h3>
+          <p>Mangalore, India</p>
+        </div>
+        <div class="info">
+          <h3>Interests</h3>
+          <p>Approximate Computing · FPGA · Analog/Mixed‑Signal · TinyML</p>
+        </div>
+        <div class="info">
+          <h3>Tools</h3>
+          <p>Cadence Virtuoso · Spectre · Vivado · MATLAB · Python</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-card">
+          <h3>Digital VLSI</h3>
+          <ul>
+            <li>Verilog / SystemVerilog</li>
+            <li>RTL → Synthesis → STA</li>
+            <li>Approximate arithmetic</li>
+            <li>FPGA (Xilinx Vivado)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Analog / Mixed‑Signal</h3>
+          <ul>
+            <li>Cadence Virtuoso / Spectre</li>
+            <li>Op‑amps, PLL, SAR ADC</li>
+            <li>Noise, stability, compensation</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Other</h3>
+          <ul>
+            <li>Python, MATLAB</li>
+            <li>Git, Linux</li>
+            <li>LaTeX, Markdown</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" alt="project 1"/>
+          <div class="card-body">
+            <h3>Approximate Multiplier (Adaptive Error)</h3>
+            <p>Hybrid architecture: ~35% dynamic power reduction with &lt;2% app‑level accuracy loss.</p>
+            <div class="tags"><span>Verilog</span><span>Cadence</span><span>Vivado</span></div>
+            <a class="card-link" href="#" target="_blank" rel="noopener">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="project 2"/>
+          <div class="card-body">
+            <h3>FPGA CNN Accelerator</h3>
+            <p>8‑bit MobileNet on Zynq‑7020; 18× speedup vs CPU and 3.2× better GOPS/W.</p>
+            <div class="tags"><span>AXI</span><span>Zynq</span><span>DMA</span></div>
+            <a class="card-link" href="#" target="_blank" rel="noopener">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="project 3"/>
+          <div class="card-body">
+            <h3>Subthreshold OTA</h3>
+            <p>Folded‑cascode OTA &lt;1 µW, 60 dB gain; Miller compensation, optimized CMRR/PSRR.</p>
+            <div class="tags"><span>Virtuoso</span><span>Spectre</span></div>
+            <a class="card-link" href="#" target="_blank" rel="noopener">View</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-date">Jan 2025 – Present</div>
+          <div class="t-content">
+            <h3>VLSI Research Intern — Lab/Institute</h3>
+            <ul>
+              <li>Designed approximate arithmetic blocks; 28% power reduction post‑layout.</li>
+              <li>Built CNN accelerator on FPGA; integrated DMA streaming.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Aug 2024 – Dec 2024</div>
+          <div class="t-content">
+            <h3>Teaching Assistant — Digital Circuits</h3>
+            <ul>
+              <li>Mentored 40+ students on Verilog testbenches and Vivado workflow.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> you@example.com</p>
+          <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/you</a></p>
+          <p><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">github.com/you</a></p>
+        </div>
+        <form onsubmit="alert('Thanks! I will get back to you soon.'); return false;">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+          <textarea rows="4" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
