@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Your Name</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Your Name</span>.</h1>
+        <p class="subtitle">M.Tech (VLSI) — Digital & Analog IC Design</p>
+        <p class="lead">
+          I design low-power digital circuits (approximate adders/multipliers), build FPGA prototypes,
+          and craft ultra‑low‑power analog front‑ends (subthreshold OTAs) for biomedical applications.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <!-- Your resume -->
+          <a class="btn-outline" href="resume.pdf" target="_blank" rel="noopener">Download My Resume</a>
+          <!-- Friend's resume -->
+          <a class="btn-outline" href="nishchay.pdf" target="_blank" rel="noopener">Download Nishchay's Resume</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="nishchaybihari.jpg" alt="My Photo" class="hero-pic"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div style="display:flex; align-items:center; gap:20px;">
+        <img src="nishchaybihari.jpg" alt="My Photo" class="profile-pic">
+        <p>
+          I'm an electronics engineer focused on power‑performance‑error trade‑offs in modern SoC design.
+          My current work explores adaptive approximate arithmetic for energy‑efficient edge AI and
+          subthreshold analog techniques for wearables.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> you@example.com</p>
+          <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/you</a></p>
+          <p><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">github.com/you</a></p>
+          <p><strong>Resume:</strong> 
+            <a href="resume.pdf" target="_blank" rel="noopener">My Resume</a> | 
+            <a href="nishchay.pdf" target="_blank" rel="noopener">Nishchay's Resume</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
