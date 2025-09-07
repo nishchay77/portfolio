@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nishchay — Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">NISHCHAY KUMAR</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>NISHCHAY</span>.</h1>
+        <p class="subtitle">M.Tech (CSIS)</p>
+        <p class="lead">
+          To excel in any form of activity and to work in a competitive
+environment where I can integrate my analytical skills and technical
+knowledge in managerial perspective to add constructively to
+organization and myself.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <!-- Your resume -->
+          <a class="btn-outline" href="resume.pdf" target="_blank" rel="noopener">Download My Resume</a>
+          <!-- Friend's resume -->
+          <a class="btn-outline" href="nishchay.pdf" target="_blank" rel="noopener">Download Nishchay's Resume</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="nishchaybihari.jpg" alt="My Photo" class="hero-pic"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div style="display:flex; align-items:center; gap:20px;">
+       
+        <p>
+          Nischay Kumar, a Computer Science and Engineering graduate from Sitamarhi Institute of Technology with a CGPA of 7.82. You have a strong foundation in programming with skills in C, C++, Python, and HTML, and have also qualified for GATE 2024 with a score of 440. To strengthen your technical expertise, you have completed certifications in Python (CISCO), Fundamentals of Computer Systems (NPTEL), and Data Structures & Algorithms using Java (NPTEL). Along with academics, you are passionate about continuous learning and exploring new technologies, while in your personal time you enjoy trading cryptocurrency, watching movies, and travelling.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> nishchayjaiswal0@gmai.com</p>
+          <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/you</a></p>
+          <p><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">github.com/you</a></p>
+          <p><strong>Resume:</strong> 
+            <a href="resume.pdf" target="_blank" rel="noopener">My Resume</a> | 
+            <a href="nishchay.pdf" target="_blank" rel="noopener">Nishchay's Resume</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
